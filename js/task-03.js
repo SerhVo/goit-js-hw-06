@@ -16,7 +16,7 @@ const galleryElem = document.querySelector(".gallery");
 const markup = images
   .map(
     ({ url, alt }) => `<li>
-<img src="${url}" alt="${alt}">
+<img src="${url}" alt="${alt}" width = 760px>
 </li>`
   )
   .join("");
@@ -24,3 +24,9 @@ const markup = images
 console.log(markup);
 
 galleryElem.insertAdjacentHTML("beforeend", markup);
+
+galleryElem.style.listStyle = "none";
+galleryElem.style.display = "flex";
+galleryElem.style.flexWrap = "wrap";
+galleryElem.style.gap = "10px";
+galleryElem.style.background = "darkseagreen";
