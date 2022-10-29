@@ -30,8 +30,6 @@ const markup = images
   )
   .join("");
 
-console.log(markup);
-
 galleryElem.insertAdjacentHTML("beforeend", markup);
 
 galleryElem.style.listStyle = "none";

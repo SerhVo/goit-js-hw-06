@@ -40,4 +40,3 @@ for (const ingredient of ingredients) {
   liElements.push(liElement);
 }
 listIngredients.append(...liElements);
-console.log(listIngredients);
